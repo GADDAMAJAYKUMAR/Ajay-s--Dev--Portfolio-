@@ -7,9 +7,9 @@ const projects = [
     title: "Portfolio Website",
     description:
       "A responsive personal portfolio to showcase skills, education, and projects. Designed with modern UI and scroll animations.",
-    tech: "HTML, CSS, JavaScript",
-    github: "https://github.com/GADDAMAJAYKUMAR/Portfolio",
-    demo: "https://gaddamajaykumar.github.io/Portfolio/",
+    tech: "React, CSS, Netlify",
+    github: "https://github.com/GADDAMAJAYKUMAR/Ajay-s--Dev--Portfolio-",
+    demo: "https://ajaykumar-portfolio-dev.netlify.app/", // ✅ updated here
   },
   {
     title: "ToDo Application",
