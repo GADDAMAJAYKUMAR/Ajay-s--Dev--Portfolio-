@@ -1,5 +1,4 @@
 import React from "react";
-import { Typewriter } from "react-simple-typewriter";
 import "./Hero.css";
 import HelloLottie from "./HelloLottie";
 import GreetingLottie from "./GreetingLottie";
