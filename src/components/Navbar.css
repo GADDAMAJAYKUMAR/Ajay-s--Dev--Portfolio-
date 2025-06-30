@@ -1,0 +1,59 @@
+/* Navbar.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  gap:space-between;
+  align-items: center;
+  padding: 20px 10%;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: #0a192f;
+  z-index: 999;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+}
+
+.logo span {
+  color: #ff004f;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin: 0;
+}
+
+.nav-links li {
+  white-space: nowrap;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  position: relative;
+}
+
+.nav-links li a::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  transition: 0.3s;
+}
+
+.nav-links li a:hover::after {
+  width: 100%;
+}
