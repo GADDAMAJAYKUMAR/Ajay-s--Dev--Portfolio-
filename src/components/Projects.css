@@ -4,8 +4,9 @@
   background: #0a192f;
   color: white;
   text-align: center;
-  height: 100vh;
+  min-height: 100vh;
 }
+
 
 .section-title {
   color: #ff004f;
