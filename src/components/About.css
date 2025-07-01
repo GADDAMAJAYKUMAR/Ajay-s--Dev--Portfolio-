@@ -63,14 +63,44 @@
 .tab-link.active::after {
   width: 100%;
 }
-
 .tab-content ul {
   margin-top: 20px;
   padding-left: 20px;
+  list-style: disc;
 }
 
 .tab-content li {
   margin-bottom: 10px;
   font-size: 16px;
   color: #ddd;
+}
+
+/* Mobile view: Horizontal scroll */
+@media (max-width: 767px) {
+  .tab-content ul {
+    list-style: none;
+    display: flex;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    gap: 12px;
+    padding-left: 0;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .tab-content ul::-webkit-scrollbar {
+    display: none;
+  }
+
+  .tab-content li {
+    flex: 0 0 auto;
+    padding: 10px 15px;
+    background: #1a1a2e;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #ddd;
+    white-space: nowrap;
+    min-width: fit-content;
+    font-weight: 500;
+  }
 }
