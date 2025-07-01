@@ -63,44 +63,35 @@
 .tab-link.active::after {
   width: 100%;
 }
+/* Default - vertical list for all screens */
 .tab-content ul {
-  margin-top: 20px;
+  max-height: none;
+  overflow-y: visible;
   padding-left: 20px;
   list-style: disc;
 }
 
+/* Skills list styling */
 .tab-content li {
   margin-bottom: 10px;
   font-size: 16px;
   color: #ddd;
 }
 
-/* Mobile view: Horizontal scroll */
+
 @media (max-width: 767px) {
   .tab-content ul {
-    list-style: none;
-    display: flex;
-    overflow-x: auto;
-    flex-wrap: nowrap;
-    gap: 12px;
-    padding-left: 0;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
+    max-height: 200px; 
+    overflow-y: auto;
+    padding-left: 20px;
   }
 
   .tab-content ul::-webkit-scrollbar {
-    display: none;
+    width: 6px;
   }
 
-  .tab-content li {
-    flex: 0 0 auto;
-    padding: 10px 15px;
-    background: #1a1a2e;
-    border-radius: 8px;
-    font-size: 14px;
-    color: #ddd;
-    white-space: nowrap;
-    min-width: fit-content;
-    font-weight: 500;
+  .tab-content ul::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 3px;
   }
 }
