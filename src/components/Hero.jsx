@@ -21,7 +21,7 @@ const Hero = () => {
             Contact Me
           </a>
           <a
-            href="https://drive.google.com/uc?export=download&id=1r2KMtMeJxjqnKyvKkvAW773QMWqenU38"
+            href="https:/23r05a6712_AJAYKUMAR.pdf"
             className="btn-secondary"
             target="_blank"
             rel="noreferrer"
