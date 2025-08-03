@@ -8,7 +8,7 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import "./App.css";
-import GestureControl from "./components/GestureControl";
+
 
 
 function App() {
@@ -24,7 +24,7 @@ function App() {
       <Projects />
       <Contact />
       <Footer />
-      <GestureControl/>
+    
     </div>
   );
 }
